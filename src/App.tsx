@@ -11,8 +11,6 @@ function App() {
     <BrowserRouter>
       <Header /> 
 
-      <h1>UICLONE-GITHUB</h1>
-
       <Routes>
         <Route path="/" element={<Profile />} />
         <Route path="/:username" element={<Profile />} />
