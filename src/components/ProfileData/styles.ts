@@ -30,7 +30,7 @@ export const Flex = styled.div`
   }
 
   @media (min-width: 768px) {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
 
     > div {
