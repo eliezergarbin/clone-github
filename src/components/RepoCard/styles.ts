@@ -73,12 +73,16 @@ export const Botside = styled.div`
     height: 12px;
     border-radius: 50%;
     flex-shrink: 0;
-  } &.other {
-    background: var(--other-language);
-  }&.javascript {
-    background: var(--javascript);
-  }&.typescript {
-    background: var(--typescript);
+
+    &.other {
+      background: var(--other-language);
+    }
+    &.javascript {
+      background: var(--javascript);
+    }
+    &.typescript {
+      background: var(--typescript);
+    }
   }
 `;
 
