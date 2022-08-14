@@ -58,21 +58,20 @@ export const RepoIcon = styled(RiBookMarkLine)`
 `;
 
 export const Stats = styled.ul`
- margin-top: 16px;
- display: flex;
- align-items: center;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
 
- > li {
+  > li {
     display: flex;
     align-items: center;
     margin-right: 9px;
 
     > * {
-        margin-right: 7px;
-        color: var(--gray);
+      margin-right: 7px;
+      color: var(--gray);
     }
- }
-
+  }
 `;
 
 export const StarIcon = styled(RiStarLine)`
@@ -83,7 +82,26 @@ export const ForkIcon = styled(AiOutlineFork)`
   ${iconCSS}
 `;
 
-export const LinkButton = styled.a``;
+export const LinkButton = styled.a`
+  text-decoration: none;
+  margin-top: 24px;
+  background: var(--gray-dark);
+  padding: 12px 17px;
+  border-radius: 24px;
+  width: max-content;
+
+  display: flex;
+  align-items: center;
+
+  > span {
+    color: var(--primary);
+  }
+
+  > svg {
+    fill: var(--primary);
+    margin-right: 10px;
+  }
+`;
 
 export const GithubIcon = styled(FaGithub)`
   ${iconCSS}
