@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { Container, GithubLogo, SearchForm } from "./styles";
 
 const Header: React.FC = () => {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
-    function handleSubmit(event: React.FormEvent) {
-        event.preventDefault();
+  function handleSubmit(event: React.FormEvent) {
+    event.preventDefault();
 
-        navigate('/' + search.toLowerCase().trim());
-    }
+    navigate("/" + search.toLowerCase().trim());
+  }
 
   return (
     <Container>
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
         <input
           placeholder="Enter Useraname or repo"
           value={search}
-          onChange={e => setSearch(e.currentTarget.value)}
+          onChange={(e) => setSearch(e.currentTarget.value)}
         />
       </SearchForm>
     </Container>
